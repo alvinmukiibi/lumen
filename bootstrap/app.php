@@ -45,7 +45,8 @@ $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
     App\Console\Kernel::class
 );
-
+$app->withEloquent();
+$app->withFacades();
 /*
 |--------------------------------------------------------------------------
 | Register Middleware
